@@ -1,0 +1,50 @@
+.first-step-container{
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    color: #fff;
+    align-items: center;
+}
+.home_background{
+    background-image: linear-gradient(#1A0E2D, #552E93);
+    width: 100%;
+}
+h1 {
+    font-size: 68px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    background-color: #7E57C2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5E35B1;
+}
+
+.image img {
+    margin-left: 100px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
