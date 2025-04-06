@@ -1,9 +1,11 @@
 import "./home.css"
 import dev_image from "./../../assets/dev_home.svg"
+import About from "../about/about.jsx"
 
 const Home = () => {
 
     return (
+      <>
         <section className="home_background">
              <div className="container">
                 <div className="first-step-container">
@@ -21,6 +23,9 @@ const Home = () => {
                 </div>
             </div>
         </section>
+        <About />
+      </>
+        
     );
 }
 

@@ -1,0 +1,16 @@
+footer {
+  background-color: black;
+  margin: 0;
+  padding-bottom: 3em;
+}
+.footer h4{
+  color: #fff;
+  padding-top: 3em;
+  font-size: 1em;
+}
+.footer p{
+  margin-top: 10px;
+  color: #959595;
+  font-size: 0.8em;
+  font-weight: 400;
+}
