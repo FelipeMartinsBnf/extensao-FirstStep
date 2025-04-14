@@ -36,9 +36,8 @@ Apesar da alta demanda, muitos estudantes enfrentam dificuldades em conseguir o 
 
 - [x] Landing page inicial concluída  
 
-## 🎨 Identidade Visual
+## Integrantes do Projeto:
+* Felipe Martins Bonfiacio
+* Thomas do Couto Alves
+* Paulo Ricardo Diniz Ribeiro
 
-- **Cores principais:**  
-  - Roxo escuro: `#1A0E2D`  
-  - Roxo vibrante: `#552E93`  
-- **Estilo:** Moderno e tecnológico, transmitindo confiança e inovação.
