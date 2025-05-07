@@ -40,4 +40,3 @@ Apesar da alta demanda, muitos estudantes enfrentam dificuldades em conseguir o 
 * Felipe Martins Bonfiacio
 * Thomas do Couto Alves
 * Paulo Ricardo Diniz Ribeiro
-
