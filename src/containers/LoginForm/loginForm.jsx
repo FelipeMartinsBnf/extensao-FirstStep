@@ -1,6 +1,7 @@
 import "./cadastroForm.css";
 import InputCard from "../../components/inputCard/inputCard";
 import Button from "../../components/button/button";
+import { Link } from "react-router-dom";
 
 const LoginForm = ({toogleForm}) => {
 
@@ -11,7 +12,7 @@ const LoginForm = ({toogleForm}) => {
         <form className="padding-sm cadastro-form-inputs">
           <InputCard label={"Seu Email"} type={"email"} />
           <InputCard label={"Sua senha"} type={"password"} />
-          <Button label={"Logar"} className={"btn-sm"} />
+          <Link to="/dash"><Button label={"Logar"} className={"btn-sm"} /></Link>
           <Button
             label={
               "Ainda não tem uma conta? Crie uma"

@@ -10,7 +10,7 @@ const Header = () => {
         <div>
           <Link className="logo-link" to="/">
             <h3 className="logo-name">
-              <span className="logo-name-1">Fist-</span>
+              <span className="logo-name-1">First-</span>
               <span className="logo-name-2">Step</span>
             </h3>
           </Link>

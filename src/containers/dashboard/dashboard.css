@@ -1,0 +1,12 @@
+
+.container-dash {
+    padding-top: 7em;
+    min-height: 60vh;
+    padding-bottom: 4em;
+}
+
+.dash-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
