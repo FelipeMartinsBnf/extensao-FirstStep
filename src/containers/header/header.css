@@ -44,3 +44,7 @@ header {
   border-radius: 8px;
   font-weight: 300;
 }
+
+.logo-link {
+  display: contents;
+}

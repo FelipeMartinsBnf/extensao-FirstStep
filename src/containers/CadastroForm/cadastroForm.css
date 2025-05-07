@@ -1,0 +1,13 @@
+
+
+.cadastro-container {
+    padding-top: 7em;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.cadastro-form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,28 @@
+
+.input-card-div {
+    display: inline-grid;
+    width: 30%;
+}
+
+.input-card-label {
+    text-align: left;
+}
+
+.input-card-input {
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin-bottom: 1em;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.input-card-input:hover {
+    border-color: #7E57C2;
+}
+
+.input-card-input:focus {
+    outline: none;
+    border-color: #7E57C2;
+    box-shadow: 0 0 0 2px rgba(126, 87, 194, 0.3);
+}

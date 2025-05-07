@@ -1,4 +1,5 @@
 import "./header.css"
+import { Link } from 'react-router-dom';
 import logo from "../../assets/logo.png"
 
 const Header = () => {
@@ -6,14 +7,16 @@ const Header = () => {
     <header>
       <div className="header-div">
         <div>
-          <img src={logo} alt="" className="logo" />
-          <h3 className="logo-name">
-            <span className="logo-name-1">Fist-</span>
-            <span className="logo-name-2">Step</span>
-          </h3>
+          <Link className="logo-link" to="/">
+            <img src={logo} alt="" className="logo" />
+            <h3 className="logo-name">
+              <span className="logo-name-1">Fist-</span>
+              <span className="logo-name-2">Step</span>
+            </h3>
+          </Link>
         </div>
         <div>
-          <button className="btn-header">Minha Conta </button>
+          <Link className="btn-header" to="/login">Minha conta</Link>
           <button className="btn-header">Vagas</button>
           <button className="btn-header">Cursos</button>
         </div>
