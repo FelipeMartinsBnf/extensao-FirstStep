@@ -74,3 +74,35 @@
 .cursos {
   margin-top: 4em;
 }
+
+@media screen and (max-width: 768px) {
+  .about-title{
+    font-size: 1.5em;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .job-image{
+    max-width: 100%;
+  }
+  .job-title{
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+  .job-subheading{
+    font-size: 0.8em;
+  }
+  .job-desc{
+    font-size: 0.8em;
+    margin-bottom: 2em;
+  }
+  .card-header{
+    margin-top: 1em;
+  }
+  .card-header span {
+    margin-right: .5em;
+    font-size: 1.2em;
+  }
+  
+}

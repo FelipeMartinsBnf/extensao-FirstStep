@@ -26,3 +26,10 @@
     border-color: #7E57C2;
     box-shadow: 0 0 0 2px rgba(126, 87, 194, 0.3);
 }
+
+@media screen and (max-width: 768px) {
+    .input-card-div {
+        width: 80%;
+    }
+  
+}
