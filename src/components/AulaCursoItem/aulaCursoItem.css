@@ -8,6 +8,11 @@
   margin-bottom: 15px;
   cursor: pointer;
   align-items: center;
+  transition: all 0.5s ease;
+}
+
+.aula-curso-item:hover {
+  border: 1px solid #7E57C2;
 }
 
 .aula-curso-item-info{

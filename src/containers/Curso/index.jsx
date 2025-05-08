@@ -1,14 +1,24 @@
+import { useState } from "react";
 import Maincard from "../../components/MainCard";
 import "./curso.css";
 import { Link } from "react-router-dom";
 import htmlLogo from "../../assets/html.svg";
 import AulaCursoItem from "../../components/AulaCursoItem";
+import AulaModal from "../../components/AulaModal";
+
 
 const Curso = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const alterarModalAula = () => {
+    setIsOpen((prev) => !prev);
+  };
 
   return (
     <main>
       <div className="container container-cursos">
+        {isOpen && <AulaModal onClick={alterarModalAula} />}
         <div className="back-btn" ><Link to={"/cursos"}>{"< Voltar"}</Link></div>
         <Maincard
           name={"Introdução ao Front-End"}
@@ -25,6 +35,7 @@ const Curso = () => {
             name={"Aula 01 - Html e fundamentos"}
             duracao={10}
             status={"Concluida"}
+            onClick={alterarModalAula}
           />
           <AulaCursoItem
             name={"Aula 02 - CSS e estilização"}
