@@ -15,14 +15,13 @@
   
   .modal-content {
     background-color: white;
-    backdrop-filter: ;
     width: 70vw;
     height: 80vh;
     border-radius: 8px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     position: relative;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
@@ -67,7 +66,7 @@
   @media (max-width: 768px) {
     .modal-content {
       width: 90vw;
-      height: 90vh;
+      height: 60vh;
       padding: 1rem;
     }
   
@@ -82,7 +81,7 @@
     }
   
     .video-wrapper {
-      width: 100%;
+      width: 90%;
       aspect-ratio: 16 / 9;
     }
   
