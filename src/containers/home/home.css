@@ -44,6 +44,16 @@ p {
     p {
         font-size: 18px;
     }
+    .content {
+      z-index: 1;
+    }
+    .image {
+      position: absolute;
+      top: 50;
+      overflow: hidden;
+      z-index: 0;
+      filter: contrast(0.8) brightness(0.6) blur(4px);
+    }
     .image img {
         width: 100%;
         margin-left: 0;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./cursosList.css";
 import htmlLogo from "../../assets/html.svg";
 import Card from "../../components/card/card";
@@ -15,6 +16,9 @@ const CursosList = () => {
   return (
     <main>
       <div className="container container-cursos">
+        <div className="back-btn">
+          <Link to={"/dash"}>{"< Voltar"}</Link>
+        </div>
         <h1 className="title-font">Cursos</h1>
         <p className="title-font-sec">Nossos cursos disponíveis:</p>
 
@@ -27,12 +31,15 @@ const CursosList = () => {
               btnName={"Assistir curso"}
               img={htmlLogo}
               className={"cursos-card"}
+              page={"/curso"}
             />
           </div>
         </div>
 
         <div
-          className={"cursos-externos" + (isOpen ? " cursos-externos-open" : "")}
+          className={
+            "cursos-externos" + (isOpen ? " cursos-externos-open" : "")
+          }
         >
           <div className="cursos-externos-header" onClick={toggleAccordion}>
             <h3 className="title-font">Cursos externos</h3>

@@ -1,0 +1,16 @@
+.aula-curso-item {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.aula-curso-item-info{
+  display: flex;
+  gap: 2em;
+}

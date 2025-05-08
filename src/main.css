@@ -48,7 +48,10 @@ h2, h3, h4 {
     font-weight: 300;
     color: rgb(104, 104, 104);
 }
-
+ .back-btn{
+  cursor: pointer;
+  margin: 1em 0;
+ }
 .flex {
     display: flex;
 }
