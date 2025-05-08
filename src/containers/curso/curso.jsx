@@ -2,7 +2,6 @@ import Maincard from "../../components/mainCard/mainCard";
 import "./curso.css";
 import { Link } from "react-router-dom";
 import htmlLogo from "../../assets/html.svg";
-import Button from "../../components/button/button";
 import AulaCursoItem from "../../components/aulaCursoItem/AulaCursoItem";
 
 const Curso = () => {
