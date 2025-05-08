@@ -1,4 +1,4 @@
-import CursosList from "../containers/cursosList/curosList";
+import CursosList from "../containers/CursosList/curosList";
 import Footer from "../containers/footer/footer";
 import Header from "../containers/header/header";
 
