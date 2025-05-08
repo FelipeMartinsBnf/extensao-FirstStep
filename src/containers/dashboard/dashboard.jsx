@@ -12,11 +12,11 @@ const Dashboard = () => {
                 <p className="text">Veja o que a First-step tem a oferecer</p>
                 <div className="dash-cards">
                     <Card  name={"Cursos"} desc={"Veja os cursos gratuítos selecionados pela nossa equipe"}
-                    btnName={"Visualizar todos os cursos"} img={cursoImg}
+                    btnName={"Visualizar todos os cursos"} img={cursoImg} page={"/cursos"}
                     />
                     <hr />
                     <Card  name={"Vagas"} desc={"Veja vagas de estágio e empregos na área de tecnologia"}
-                    btnName={"Visualizar vagas"} img={vagasImg}
+                    btnName={"Visualizar vagas"} img={vagasImg} 
                     />
                    
                 </div>
