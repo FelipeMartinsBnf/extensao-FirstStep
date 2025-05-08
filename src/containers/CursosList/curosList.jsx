@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./cursosList.css";
 import htmlLogo from "../../assets/html.svg";
-import Card from "../../components/Card/Card";
+import Card from "../../components/card/Card";
 import dropdownIcon from "../../assets/down.svg";
 import upIcon from "../../assets/up.svg";
 
