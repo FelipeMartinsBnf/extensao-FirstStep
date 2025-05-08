@@ -1,6 +1,6 @@
-import Header from '../containers/header/header'
-import Footer from '../containers/footer/footer';
-import Home from '../containers/home/home';
+import Header from '../containers/Header'
+import Footer from '../containers/Footer';
+import Home from '../containers/Home';
 import "../main.css";
 
 

@@ -1,8 +1,8 @@
-import Maincard from "../../components/mainCard/mainCard";
+import Maincard from "../../components/MainCard";
 import "./curso.css";
 import { Link } from "react-router-dom";
 import htmlLogo from "../../assets/html.svg";
-import AulaCursoItem from "../../components/aulaCursoItem/AulaCursoItem";
+import AulaCursoItem from "../../components/AulaCursoItem";
 
 const Curso = () => {
 

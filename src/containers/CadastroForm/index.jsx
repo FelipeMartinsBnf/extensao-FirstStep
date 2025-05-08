@@ -1,5 +1,5 @@
-import Button from "../../components/button/button"
-import InputCard from "../../components/inputCard/inputCard"
+import Button from "../../components/Button"
+import InputCard from "../../components/InputCard"
 import "./cadastroForm.css"
 
 const CadastroForm = ({toogleForm}) => {

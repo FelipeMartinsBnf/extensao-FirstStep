@@ -1,7 +1,7 @@
 import "./home.css"
 import dev_image from "./../../assets/dev_home.svg"
-import About from "../about/about.jsx"
-import Button from "../../components/button/button.jsx";
+import About from "../About"
+import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 
 const Home = () => {

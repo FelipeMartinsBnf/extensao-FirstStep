@@ -1,6 +1,6 @@
-import Dashboard from "../containers/dashboard/dashboard"
-import Footer from "../containers/footer/footer"
-import Header from "../containers/header/header"
+import Dashboard from "../containers/Dashboard"
+import Footer from "../containers/Footer"
+import Header from "../containers/Header"
 
 const DashboardPage = () => {
 

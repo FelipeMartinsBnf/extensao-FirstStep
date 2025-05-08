@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./cursosList.css";
 import htmlLogo from "../../assets/html.svg";
-import Card from "../../components/card/card";
+import Card from "../../components/Card";
 import dropdownIcon from "../../assets/down.svg";
 import upIcon from "../../assets/up.svg";
 

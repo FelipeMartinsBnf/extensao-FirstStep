@@ -1,4 +1,4 @@
-import Card from "../../components/card/card"
+import Card from "../../components/Card"
 import cursoImg from "../../assets/Lesson-amico.svg"
 import vagasImg from "../../assets/Resume-amico.svg"
 import "./dashboard.css"

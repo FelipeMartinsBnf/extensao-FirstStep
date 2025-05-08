@@ -1,6 +1,6 @@
 import "./card.css"
 import { Link } from "react-router-dom"
-import Button from "../button/button"
+import Button from "../Button"
 
 const Card = (
     {name, desc, btnName, img, page, className}

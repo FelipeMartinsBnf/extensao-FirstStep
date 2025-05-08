@@ -1,6 +1,6 @@
 import "./cadastroForm.css";
-import InputCard from "../../components/inputCard/inputCard";
-import Button from "../../components/button/button";
+import InputCard from "../../components/InputCard";
+import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 
 const LoginForm = ({toogleForm}) => {

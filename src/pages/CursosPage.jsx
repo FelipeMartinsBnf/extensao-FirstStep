@@ -1,6 +1,6 @@
-import CursosList from "../containers/cursosList/cursosList.jsx";
-import Footer from "../containers/footer/footer";
-import Header from "../containers/header/header";
+import CursosList from "../containers/CursosList";
+import Footer from "../containers/Footer";
+import Header from "../containers/Header";
 
 const CursosPage = () => {
 
