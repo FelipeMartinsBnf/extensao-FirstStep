@@ -1,6 +1,6 @@
 import Header from '../containers/header/header';
 import Footer from "../containers/footer/footer";
-import Curso from '../containers/Curso/curso';
+import Curso from '../containers/curso/curso';
 
 const CursoPage = () => {
 
