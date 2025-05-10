@@ -1,13 +1,12 @@
 import Dashboard from "../containers/Dashboard"
 import Footer from "../containers/Footer"
-import Header from "../containers/Header"
+import Header from "../components/Header"
 
 const DashboardPage = () => {
 
 
     return (
         <>
-            <Header />
             <Dashboard />
             <Footer />
         </>

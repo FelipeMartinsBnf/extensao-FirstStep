@@ -52,6 +52,11 @@ h2, h3, h4 {
   cursor: pointer;
   margin: 1em 0;
  }
+ .btn-disabled {
+    background-color: #594d6e;
+    color: white;
+    cursor: not-allowed;
+ }
 .flex {
     display: flex;
 }

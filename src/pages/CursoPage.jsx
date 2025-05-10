@@ -1,4 +1,4 @@
-import Header from '../containers/Header';
+import Header from '../components/Header';
 import Footer from "../containers/Footer";
 import Curso from '../containers/Curso';
 
@@ -7,7 +7,6 @@ const CursoPage = () => {
 
   return (
     <>
-      <Header />
       <Curso />
       <Footer />
     </>

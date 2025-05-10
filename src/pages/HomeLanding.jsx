@@ -1,4 +1,4 @@
-import Header from '../containers/Header';
+import Header from '../components/Header';
 import Footer from '../containers/Footer';
 import Home from '../containers/Home';
 import "../main.css";
@@ -7,7 +7,6 @@ import "../main.css";
 const HomeLanding = () => {
     return (
         <>
-            <Header />
             <Home></Home>
             <Footer />
         </>
