@@ -1,9 +1,9 @@
 import "./aulaCursoItem.css";
 
-const AulaCursoItem = ({ name, duracao, status, onClick }) => {
+const AulaCursoItem = ({ name, duracao, status, onClick, idCurso }) => {
 
   return (
-    <div className="aula-curso-item" onClick={onClick}>
+    <div className="aula-curso-item" onClick={() => onClick(idCurso)}>
       <div>
         <h4 className="title-font-sec">{name}</h4>
       </div>
