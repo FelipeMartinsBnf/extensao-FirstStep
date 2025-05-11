@@ -19,3 +19,13 @@
   display: flex;
   gap: 2em;
 }
+
+.concluida {
+  color: #1a812a;
+  font-weight: 700;
+}
+
+.pendente {
+  color: #884fd9;
+  font-weight: 700;
+}

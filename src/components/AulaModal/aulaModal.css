@@ -63,6 +63,15 @@
     justify-content: center;
   }
 
+  .btn-aula-concluida {
+    background-color: rgb(26, 111, 40);
+    color: white;
+  }
+  .btn-aula-concluida:hover {
+    background-color: rgb(26, 111, 40);
+    color: white;
+  }
+
   @media (max-width: 768px) {
     .modal-content {
       width: 90vw;
@@ -94,4 +103,15 @@
     }
   }
   
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+   }
   
+  @keyframes fadeIn {
+    from {
+     opacity: 0;
+   }
+    to {
+      opacity: 1;
+    }
+  }

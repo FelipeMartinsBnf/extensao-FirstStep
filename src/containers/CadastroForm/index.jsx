@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth, db } from "../../firebase";
 import { updateProfile } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
 import Button from "../../components/Button";
 import InputCard from "../../components/InputCard";
 import "./cadastroForm.css";
@@ -19,11 +20,21 @@ const CadastroForm = ({ toogleForm }) => {
       await updateProfile(auth.currentUser, {
         displayName: nome, // vem do input do usuário
       });
+      criarProgressoInicial();
       alert("Cadastro feito com sucesso!");
     } catch (err) {
       setErro(err.message);
     }
   };
+
+  async function criarProgressoInicial() {
+    const user = auth.currentUser;
+    if (!user) return;
+
+    await setDoc(doc(db, "progressoUsuarios", user.uid), {
+      aulasConcluidas: [],
+    });
+  }
 
   return (
     <div className="cadastro-container">

@@ -1,6 +1,6 @@
 import "./aulaCursoItem.css";
 
-const AulaCursoItem = ({ name, duracao, status, onClick, idCurso }) => {
+const AulaCursoItem = ({ name, duracao, concluida, onClick, idCurso }) => {
 
   return (
     <div className="aula-curso-item" onClick={() => onClick(idCurso)}>
@@ -9,7 +9,14 @@ const AulaCursoItem = ({ name, duracao, status, onClick, idCurso }) => {
       </div>
       <div className="aula-curso-item-info">
         <p className="text">Duração: {duracao} min </p>
-        <p className="text">Status: {status}</p>
+        <p className="text">
+          Status:{" "}
+          {concluida ? (
+            <span className="concluida">concluido</span>
+          ) : (
+            <span className="pendente">pendente</span>
+          )}
+        </p>
       </div>
     </div>
   );

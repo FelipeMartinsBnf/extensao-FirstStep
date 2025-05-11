@@ -21,6 +21,10 @@
   padding: 0.3em;
   font-size: 14px;
   font-weight: 200;
+  cursor: default;
+}
+.tag-completed:hover {
+  background-color: #009951;
 }
 
 .cursos-card{

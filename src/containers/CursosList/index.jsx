@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { buscarAulasConcluidas } from "../../services/firestoreService";
 import { Link } from "react-router-dom";
 import "./cursosList.css";
 import htmlLogo from "../../assets/html.svg";
@@ -8,10 +9,20 @@ import upIcon from "../../assets/up.svg";
 
 const CursosList = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [aulas, setAulas] = useState([]);
 
   const toggleAccordion = () => {
     setIsOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+     fetchAulas();
+   }, []);
+
+  async function fetchAulas() {
+     const resultado = await buscarAulasConcluidas();
+     setAulas(resultado);
+  }
 
   return (
     <main>
@@ -24,7 +35,9 @@ const CursosList = () => {
 
         <div className="cursos-list">
           <div className="cursos-list-item">
-            <span className="btn tag-completed">Concluído</span>
+            {aulas.length == 4 ? (
+              <span className="btn tag-completed">Concluído</span>
+            ) : ""}
             <Card
               name={"Introdução ao Front-end"}
               desc={"Curso os conceitos de Html, Css e JavaScript"}
