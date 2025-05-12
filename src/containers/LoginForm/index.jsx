@@ -5,6 +5,7 @@ import "./cadastroForm.css";
 import InputCard from "../../components/InputCard";
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
+import { traduzirErroFirebase } from "../../util/firebase/firebaseErros";
 
 const LoginForm = ({ toogleForm, setUserName }) => {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ const LoginForm = ({ toogleForm, setUserName }) => {
       setUserName(auth.currentUser?.displayName + " | Sair");
       navigate("/dash");
     } catch (err) {
-      setErro(err.message);
+      setErro(traduzirErroFirebase(err.code));
     }
   };
 

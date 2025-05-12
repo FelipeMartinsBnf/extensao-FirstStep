@@ -17,7 +17,10 @@ const LoginPage = ({setUserName}) => {
       <>
         <main className="container">
           {mostrarCadastro ? (
-            <CadastroForm toogleForm={alternarFormulario} />
+            <CadastroForm
+              toogleForm={alternarFormulario}
+              setUserName={setUserName}
+            />
           ) : (
             <LoginForm
               setUserName={setUserName}

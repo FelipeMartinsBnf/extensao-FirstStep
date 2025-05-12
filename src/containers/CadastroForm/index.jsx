@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 import { auth, db } from "../../firebase";
 import { updateProfile } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
@@ -7,11 +8,13 @@ import Button from "../../components/Button";
 import InputCard from "../../components/InputCard";
 import "./cadastroForm.css";
 
-const CadastroForm = ({ toogleForm }) => {
+const CadastroForm = ({ toogleForm, setUserName }) => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [nome, setNome] = useState("");
   const [erro, setErro] = useState("");
+
+  const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -21,7 +24,9 @@ const CadastroForm = ({ toogleForm }) => {
         displayName: nome, // vem do input do usuário
       });
       criarProgressoInicial();
+      setUserName(auth.currentUser?.displayName + " | Sair");
       alert("Cadastro feito com sucesso!");
+      navigate("/dash");
     } catch (err) {
       setErro(err.message);
     }
