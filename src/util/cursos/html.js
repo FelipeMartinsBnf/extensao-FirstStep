@@ -3,7 +3,7 @@ export const aulasHtml = [
     "nome": "Aula 01 - HTML e Fundamentos",
     "duracao": 10,
     "id": 1,
-    "url": "https://www.youtube.com/embed/Ejkb_YpuHWs?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n",
+    "url": "https://www.youtube.com/embed/WRZRlCt0EfE",
   },
  {
     "nome": "Aula 02 - CSS e estilizaçãos",

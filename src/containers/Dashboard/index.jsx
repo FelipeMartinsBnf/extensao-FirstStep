@@ -14,7 +14,7 @@ const Dashboard = () => {
         <div className="dash-cards">
           <Card
             name={"Cursos"}
-            desc={"Veja os cursos gratuítos selecionados pela nossa equipe"}
+            desc={"Veja os cursos gratuitos selecionados pela nossa equipe"}
             btnName={"Visualizar todos os cursos"}
             img={cursoImg}
             page={"/cursos"}

@@ -30,6 +30,11 @@
 
 .card-img {
     max-width: 100%;
+    border-radius: 10px;
+}
+
+.card-static {
+  height: 5em;
 }
 
 @media (max-width: 768px) {

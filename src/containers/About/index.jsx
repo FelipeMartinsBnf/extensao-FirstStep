@@ -8,8 +8,16 @@ const About = () => {
       <div className="container">
         <h2 className="about-title">Sobre o First-Step</h2>
         <p className="about-title-sec">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
-          odit quos impedit sequi neque, quo a
+          <span>
+            <b>👣 Dê o Primeiro Passo na Sua Carreira em Tecnologia</b>
+          </span>
+          <br />
+          First-Step é um portal criado para ajudar estudantes de tecnologia a
+          conquistarem seu primeiro estágio. Aqui, você encontra vagas focadas
+          em quem está começando, além de dicas, materiais de estudo e
+          ferramentas inteligentes que facilitam sua preparação para o mercado
+          de trabalho. Tudo em um só lugar, pensado para quem quer dar o
+          primeiro passo com mais confiança.
         </p>
         <div className="card">
           <div>
@@ -20,13 +28,13 @@ const About = () => {
             />
           </div>
           <div>
-            <h4 className="job-title">Vaga 01</h4>
-            <p className="job-subheading">Subheading</p>
+            <h4 className="job-title">Vagas de Emprego</h4>
+            <p className="job-subheading">Em breve!</p>
             <p className="job-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              placeat minus neque voluptatum, magni itaque quaerat inventore
-              recusandae voluptatem nobis sunt perspiciatis iste in autem quos
-              eveniet ducimus sit nesciunt!
+              Em breve, teremos várias vagas dem emprego selecionadas
+              especialmente para estudantes de tecnologia. Aqui, você encontrará
+              oportunidades que se encaixam no seu perfil e nas suas
+              necessidades. Fique ligado!
             </p>
           </div>
           <div className="job-more">
@@ -39,32 +47,31 @@ const About = () => {
       </div>
       <section className="container">
         <div className="cursos">
-          <h4 className="about-title">Alguns cursos</h4>
-          <p className="job-subheading">Subheading</p>
+          <h4 className="about-title">Cursos</h4>
+          <p className="job-subheading">Nossos cursos e mais!</p>
         </div>
         <div className="card">
           <div>
             <div className="card-header">
               <span class="material-symbols-outlined icon-sec">book_5</span>
-              <h4 className="card-title">Curso 01</h4>
+              <h4 className="card-title">Introdução ao Front-End</h4>
             </div>
             <p className="card-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a
-              fugiat aliquid repellendus voluptate incidunt quo exercitationem
-              asperiores illum dicta ipsum labore veniam saepe, magni porro
-              deserunt laboriosam commodi. Dolorum.
+              Curso com os conceitos de Html, Css e JavaScript. Aqui você vai
+              aprender a criar páginas web responsivas e dinâmicas. O curso é preparado para iniciantes
+              e pessoa que querem aprender do zero. Ao final do curso, você terá
+              um portfólio com projetos práticos e reais.
             </p>
           </div>
           <div>
             <div className="card-header">
               <span class="material-symbols-outlined icon-sec">book_5</span>
-              <h4 className="card-title">Curso 01</h4>
+              <h4 className="card-title">Outros cursos externos</h4>
             </div>
             <p className="card-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a
-              fugiat aliquid repellendus voluptate incidunt quo exercitationem
-              asperiores illum dicta ipsum labore veniam saepe, magni porro
-              deserunt laboriosam commodi. Dolorum.
+              Também selecionamos e indicamos cursos gratuitos de outras plataformas externas.
+              Aqui você vai encontrar cursos de Front-End, Back-End, UX/UI e muito mais!
+              Todos os cursos são gratuitos e com certificado.
             </p>
           </div>
           <div className="job-more">
