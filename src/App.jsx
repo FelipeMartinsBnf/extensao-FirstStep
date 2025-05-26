@@ -7,6 +7,7 @@ import CursosPage from './pages/CursosPage';
 import CursoPage from "./pages/CursoPage";
 import Header from './components/Header';
 import { useState } from 'react';
+import DicasPage from './pages/DicasPage';
 
 function App() {
 
@@ -42,6 +43,14 @@ function App() {
           element={
             <RequireAuth>
               <CursoPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/dicas"
+          element={
+            <RequireAuth>
+              <DicasPage />
             </RequireAuth>
           }
         />

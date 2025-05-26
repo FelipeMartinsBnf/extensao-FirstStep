@@ -6,7 +6,15 @@
 }
 
 .dash-cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3em;
+}
+
+@media (max-width: 768px) {
+    .dash-cards {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+  
 }
