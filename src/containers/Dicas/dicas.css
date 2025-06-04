@@ -32,32 +32,18 @@
   transition: all 0.5s;
   transform: rotate(180deg);
 }
-
 .dicas-content {
-  transition: transform 0.5s ease, all 0.5s ease;
-  /* Transições para transform e opacidade */
-  transform: scaleY(0);
-  /* Inicialmente, a escala Y é 0 (fechado) */
-  transform-origin: top;
-  /* A animação começa do topo */
+  max-height: 0;
+  overflow: hidden;
   opacity: 0;
-  /* Opacidade inicial quando fechado */
+  transition: max-height 0.5s ease, opacity 0.3s ease;
 }
 
 .dicas-open {
-  transform: scaleY(1);
-  /* Escala Y é 1 (aberto) */
+  max-height: 500px; /* Um valor maior que o necessário */
   opacity: 1;
-  /* Opacidade quando aberto */
 }
 
-.dicas-close {
-  transform: scaleY(0);
-  /* Escala Y é 0 (fechado) */
-  opacity: 0;
-  /* Opacidade quando fechado */
-  max-height: 0em;
-}
 .dicas-item {
   display: flex;
   flex-direction: column;
@@ -93,4 +79,20 @@
 
 .dicas-item-text{
   font-size: 16px;
+}
+
+.page-link a {
+  cursor: pointer;
+  margin: 0.2em 0;
+  text-decoration: underline;
+
+  color: #7E57C2;
+}
+
+@media (max-width: 768px) {
+  .dicas-container {
+      grid-template-columns: 1fr;
+      gap: 2em;
+  }
+
 }

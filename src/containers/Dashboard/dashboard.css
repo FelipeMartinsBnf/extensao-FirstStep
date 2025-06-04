@@ -11,6 +11,10 @@
     gap: 3em;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 @media (max-width: 768px) {
     .dash-cards {
         grid-template-columns: 1fr;
