@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./dicas.css";
 import dropdown from "../../assets/arrow_drop_down_circle.svg"
@@ -9,7 +9,6 @@ const [habilidades, setHabilidades] = useState(false);
 const [perguntas, setPerguntas] = useState(false);
 const [extras, setExtras] = useState(false);
 const [pos, setPos] = useState(false);
-const posRef = useRef(null)
 
 const toggleEntrevista = () => {
   setEntrevista((prev) => !prev);
@@ -35,7 +34,7 @@ return (
   <main className="container dicas-container">
     <aside className="asside-bar">
       <div className="back-btn">
-          <Link to={"/cursos"}>{"< Voltar"}</Link>
+          <Link to={"/dash"}>{"< Voltar"}</Link>
       </div>
       <h2>Tópicos</h2>
       <h4 className="dicas-item-title page-link" onClick={() => setEntrevista(true)} ><a href="#entrevista">➡ Dicas para Entrevistas</a></h4>

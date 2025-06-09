@@ -1,8 +1,8 @@
-import Dicas from "../containers/Dicas";
 import Footer from "../containers/Footer";
+import Vagas from "../containers/Vagas";
 import { motion } from "framer-motion";
 
-const DicasPage = () => {
+const VagasPage = () => {
   return (
     <motion.div
     initial={{ opacity: 0, x: 0 }}
@@ -10,10 +10,10 @@ const DicasPage = () => {
     exit={{ opacity: 0, x: 50 }}
     transition={{ duration: 0.3 }}
     >
-      <Dicas />
+      <Vagas />
       <Footer />
     </motion.div>
   );
-};
+}
 
-export default DicasPage;
+export default VagasPage;

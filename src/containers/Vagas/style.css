@@ -1,0 +1,56 @@
+.container-vagas {
+  padding-top: 7em;
+  min-height: 60vh;
+  padding-bottom: 4em;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0em;
+}
+
+.search-box {
+  display: flex;
+  border: 2px solid #7E57C2;
+  padding: 0.4em;
+  border-radius: 10px;
+  background-color: #F7F2FA;
+  box-shadow: 4px 6px 2px -1px #1A0E2D;
+}
+
+.search-box label{
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 20em;
+  margin-left: 1em;
+  background-color: #F7F2FA;
+  
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 20% auto;
+  gap: 2em;
+}
+
+.filtros-div {
+  border: 2px solid #7E57C2;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 4px 6px 2px -1px #1A0E2D;
+}
+
+.vagas-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}

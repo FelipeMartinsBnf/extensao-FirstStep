@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import CadastroForm from "../containers/CadastroForm"
 import LoginForm from "../containers/LoginForm"
 import Footer from "../containers/Footer"
+
 
 
 
@@ -14,7 +16,12 @@ const LoginPage = ({setUserName}) => {
     };
 
     return (
-      <>
+      <motion.div
+      initial={{ opacity: 0, x: 0 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 50 }}
+      transition={{ duration: 0.3 }}
+      >
         <main className="container">
           {mostrarCadastro ? (
             <CadastroForm
@@ -29,7 +36,7 @@ const LoginPage = ({setUserName}) => {
           )}
         </main>
         <Footer />
-      </>
+      </motion.div>
     );
 }
 

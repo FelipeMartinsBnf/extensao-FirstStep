@@ -36,11 +36,11 @@
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.3s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .dicas-open {
-  max-height: 500px; /* Um valor maior que o necessário */
+  max-height: 100%;
   opacity: 1;
 }
 
