@@ -1,0 +1,32 @@
+.modal-content-vaga {
+  min-height: 80%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.vaga-m-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.vaga-s-title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.vagas-tags  {
+  margin: 1em 0;
+}
+
+.vagas-tags span {
+  font-size: 0.8em;
+  margin-right: 0.3em;
+  padding: 0.6em;
+}
+
+.vagas-tags span:hover {
+  background-color: #7E57C2;
+}

@@ -4,6 +4,19 @@
 
 .vaga-card {
   display: flex;
+  cursor: pointer;
+  height: 9em;
+  width: auto;
+  overflow: hidden;
+}
+.vaga-card .text {
+  height: 100%;
+  /* altura suficiente para 2 linhas */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .vaga-tag {
@@ -12,7 +25,7 @@
   justify-content: center;
   width: fit-content;
   height: 1.2em;
-  padding: 0.2em;
+  padding: 0.4em;
   font-size: 12px;
   border-radius: 5px;
   background-color: #7E57C2;

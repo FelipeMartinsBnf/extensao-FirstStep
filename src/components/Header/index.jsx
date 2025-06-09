@@ -33,12 +33,18 @@ const Header = ({userName, setUserName}) => {
           <Link className="btn-header " to="/dash">
             <Button
               className="btn-header "
-              label={"Vagas"}
-              disabled={true}
+              label={"Dashboard"}
+              disabled={false}
             />
+          </Link>
+          <Link className="btn-header " to="/vagas">
+            <Button className="btn-header " label={"Vagas"} disabled={false} />
           </Link>
           <Link className="btn-header " to="/cursos">
             <Button className="btn-header" label={"Cursos"} />
+          </Link>
+          <Link className="btn-header " to="/dicas">
+            <Button className="btn-header" label={"Dicas"} />
           </Link>
         </div>
       </div>

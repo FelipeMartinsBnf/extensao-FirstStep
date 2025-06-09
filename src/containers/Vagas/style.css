@@ -47,10 +47,85 @@
   border-radius: 10px;
   padding: 1em;
   box-shadow: 4px 6px 2px -1px #1A0E2D;
+  height: fit-content;
 }
 
 .vagas-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
+  width: 100%;
+}
+
+.btn-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+  font-size: 14px;
+  width: 100%;
+  appearance: none;
+  margin: 0.5em 0;
+  margin-bottom: 1em;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white"><polygon points="0,0 12,0 6,6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.75rem auto;
+}
+
+.chk-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  /* não seleciona texto sem querer */
+}
+
+.chk-input{
+  position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.chk-custom {
+  width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid #7e57c2;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.chk-input:focus+.chk-custom {
+  box-shadow: 0 0 0 3px rgba(126, 87, 194, 0.3);
+}
+
+.chk-input:checked+.chk-custom {
+  background-color: #7e57c2;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5l3.3 3.3L11 1.6' stroke='%23fff' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #7e57c2;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros-div {
+    margin-bottom: 2em;
+  }
+
+  .vagas-list {
+    grid-template-columns: 1fr;
+  }
+
+  .vaga-card img {
+    width: 100%;
+    height: auto;
+  }
+  
 }
