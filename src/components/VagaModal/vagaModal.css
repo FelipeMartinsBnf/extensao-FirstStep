@@ -30,3 +30,31 @@
 .vagas-tags span:hover {
   background-color: #7E57C2;
 }
+
+.vaga-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .vaga-m-title {
+    font-size: 1.2em;
+  }
+  
+  .vaga-s-title {
+    font-size: 1em;
+  }
+  
+  .vaga-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vaga-btns button {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  
+}

@@ -23,8 +23,12 @@
 }
 .job-image{
   cursor: pointer;
-  max-width: 90%;
   border-radius: 8px;
+  width: 200px;
+}
+.job-image-container {
+  display: flex;
+  justify-content: center;
 }
 .job-title{
   cursor: pointer;
@@ -69,6 +73,10 @@
   font-weight: 300;
   margin: 0.5em 3em;
 
+}
+
+.job-more-link {
+  color: white;
 }
 
 .cursos {

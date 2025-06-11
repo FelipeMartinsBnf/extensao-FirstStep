@@ -111,7 +111,7 @@ const Vagas = () => {
                   onChange={(e) => setFiltroTipo(e.target.value)}
                 >
                   <option value="">Todos</option>
-                  <option value="estagio">Estágio</option>
+                  <option value="estágio">Estágio</option>
                   <option value="pj">PJ</option>
                   <option value="clt">CLT</option>
                 </select>
@@ -126,6 +126,7 @@ const Vagas = () => {
                   <option value="">Todas</option>
                   <option value="remoto">Remoto</option>
                   <option value="presencial">Presencial</option>
+                  <option value="híbrida">Híbrida</option>
                 </select>
               </div>
               <div>
@@ -160,6 +161,7 @@ const Vagas = () => {
                     name={vaga.titulo}
                     empresa={vaga.empresa}
                     desc={vaga.descricao}
+                    localizacao={vaga.localizacao}
                     btnName={"Mais informações"}
                     className={"vaga-card"}
                     onClick={() => handleModal(vaga)}

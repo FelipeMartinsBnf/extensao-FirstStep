@@ -46,7 +46,10 @@ const VagaModal = ({
               </span>
             ))}</p>
           </div>
-          <div>
+          <div className="vaga-btns">
+            <a 
+              href={vaga.link} target="blank"
+              ><button className="btn" disabled={vaga.link == null ? true : false }>Visitar Link Vaga</button> </a>
             <button
               className="btn"
               onClick={(e) => {

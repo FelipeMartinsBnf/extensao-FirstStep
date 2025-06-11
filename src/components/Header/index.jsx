@@ -23,7 +23,7 @@ const Header = ({userName, setUserName}) => {
           </Link>
         </div>
         <div>
-          <Link className="btn-header " to="/login">
+          <Link className="btn-header" to="/login">
             <Button
               className="btn-header"
               label={userName}
@@ -37,13 +37,13 @@ const Header = ({userName, setUserName}) => {
               disabled={false}
             />
           </Link>
-          <Link className="btn-header " to="/vagas">
+          <Link className="btn-header btn-header-lg" to="/vagas">
             <Button className="btn-header " label={"Vagas"} disabled={false} />
           </Link>
-          <Link className="btn-header " to="/cursos">
+          <Link className="btn-header btn-header-lg" to="/cursos">
             <Button className="btn-header" label={"Cursos"} />
           </Link>
-          <Link className="btn-header " to="/dicas">
+          <Link className="btn-header btn-header-lg" to="/dicas">
             <Button className="btn-header" label={"Dicas"} />
           </Link>
         </div>

@@ -34,25 +34,55 @@ return (
   <main className="container dicas-container">
     <aside className="asside-bar">
       <div className="back-btn">
-          <Link to={"/dash"}>{"< Voltar"}</Link>
+        <Link to={"/dash"}>{"< Voltar"}</Link>
       </div>
       <h2>Tópicos</h2>
-      <h4 className="dicas-item-title page-link" onClick={() => setEntrevista(true)} ><a href="#entrevista">➡ Dicas para Entrevistas</a></h4>
-      <h4 className="dicas-item-title page-link" onClick={() => setHabilidades(true)} ><a href="#habilidades">➡ Habilidades para Destacar</a></h4>
-      <h4 className="dicas-item-title page-link" onClick={() => setPerguntas(true)}><a href="#perguntas">➡ Perguntas</a> </h4>
-      <h4 className="dicas-item-title page-link" onClick={() => setExtras(true)}><a href="#extras">➡ Dicas Extras</a></h4>
-      <h4 className="dicas-item-title page-link" onClick={() => setPos(true)}><a href="#pos">➡ Pós e Pre Entrevista</a></h4>
+      <h4
+        className="dicas-item-title page-link"
+        onClick={() => setEntrevista(true)}
+      >
+        <a href="#entrevista">➡ Dicas para Entrevistas</a>
+      </h4>
+      <h4
+        className="dicas-item-title page-link"
+        onClick={() => setHabilidades(true)}
+      >
+        <a href="#habilidades">➡ Habilidades para Destacar</a>
+      </h4>
+      <h4
+        className="dicas-item-title page-link"
+        onClick={() => setPerguntas(true)}
+      >
+        <a href="#perguntas">➡ Perguntas</a>{" "}
+      </h4>
+      <h4
+        className="dicas-item-title page-link"
+        onClick={() => setExtras(true)}
+      >
+        <a href="#extras">➡ Dicas Extras</a>
+      </h4>
+      <h4 className="dicas-item-title page-link" onClick={() => setPos(true)}>
+        <a href="#pos">➡ Pós e Pre Entrevista</a>
+      </h4>
     </aside>
     <div>
-      <h1 id="entrevista" className="title-font">Dicas</h1>
+      <h1 id="entrevista" className="title-font">
+        Dicas para Entrevistas
+      </h1>
       <div>
-        <div className="dicas-dropdown-btn"  onClick={toggleEntrevista}>
+        <div className="dicas-dropdown-btn" onClick={toggleEntrevista}>
           <div className="dicas-dropdown-btn-btn">
-            <img src={dropdown} alt="abrir conteudo" className={entrevista ? "dicas-dropdown-icon-open" : "dicas-dropdown-icon-close"} />
+            <img
+              src={dropdown}
+              alt="abrir conteudo"
+              className={
+                entrevista
+                  ? "dicas-dropdown-icon-open"
+                  : "dicas-dropdown-icon-close"
+              }
+            />
           </div>
-          <h2
-            className="title-font-sec sec-title-dicas"
-          >
+          <h2 className="title-font-sec sec-title-dicas">
             Dicas para Entrevistas
           </h2>
         </div>
@@ -125,13 +155,23 @@ return (
         </div>
       </div>
       <div>
-        <div className="dicas-dropdown-btn"  onClick={toggleHabilidades} id="habilidades">
+        <div
+          className="dicas-dropdown-btn"
+          onClick={toggleHabilidades}
+          id="habilidades"
+        >
           <div className="dicas-dropdown-btn-btn">
-            <img src={dropdown} alt="abrir conteudo" className={habilidades ? "dicas-dropdown-icon-open" : "dicas-dropdown-icon-close"} />
+            <img
+              src={dropdown}
+              alt="abrir conteudo"
+              className={
+                habilidades
+                  ? "dicas-dropdown-icon-open"
+                  : "dicas-dropdown-icon-close"
+              }
+            />
           </div>
-          <h2
-            className="title-font-sec sec-title-dicas"
-          >
+          <h2 className="title-font-sec sec-title-dicas">
             Habilidades para Destacar
           </h2>
         </div>
@@ -227,14 +267,24 @@ return (
         </div>
       </div>
       <div>
-        <div className="dicas-dropdown-btn"  onClick={togglePerguntas} id="perguntas">
+        <div
+          className="dicas-dropdown-btn"
+          onClick={togglePerguntas}
+          id="perguntas"
+        >
           <div className="dicas-dropdown-btn-btn">
-            <img src={dropdown} alt="abrir conteudo" className={perguntas ? "dicas-dropdown-icon-open" : "dicas-dropdown-icon-close"} />
+            <img
+              src={dropdown}
+              alt="abrir conteudo"
+              className={
+                perguntas
+                  ? "dicas-dropdown-icon-open"
+                  : "dicas-dropdown-icon-close"
+              }
+            />
           </div>
-          <h2
-            className="title-font-sec sec-title-dicas"
-          >
-           Perguntas Frequentes e Como Responder
+          <h2 className="title-font-sec sec-title-dicas">
+            Perguntas Frequentes e Como Responder
           </h2>
         </div>
         <div
@@ -248,7 +298,8 @@ return (
                 <span className="dicas-icon">🟣</span> "Fale sobre você."
               </h4>
               <p className="text dicas-item-text">
-                Foque em formação, interesses na área e objetivos. Ex.: "Estudo [curso] e me interesso por [área tech] porque..."
+                Foque em formação, interesses na área e objetivos. Ex.: "Estudo
+                [curso] e me interesso por [área tech] porque..."
               </p>
             </div>
             <div className="dicas-item-content">
@@ -256,7 +307,8 @@ return (
                 <span className="dicas-icon">🟣</span>"Por que quer esta vaga?"
               </h4>
               <p className="text dicas-item-text">
-              Demonstre conhecimento sobre a empresa. Ex.: "Admiro [projeto/tecnologia da empresa] e desejo contribuir com..."
+                Demonstre conhecimento sobre a empresa. Ex.: "Admiro
+                [projeto/tecnologia da empresa] e desejo contribuir com..."
               </p>
             </div>
             <div className="dicas-item-content">
@@ -264,40 +316,45 @@ return (
                 <span className="dicas-icon">📖</span>"Qual seu maior desafio?"
               </h4>
               <p className="text dicas-item-text">
-              Conte sobre um projeto ou problema que superou. Ex.: "Enfrentei um bug em um código e resolvi através de [X]."
+                Conte sobre um projeto ou problema que superou. Ex.: "Enfrentei
+                um bug em um código e resolvi através de [X]."
               </p>
             </div>
             <div className="dicas-item-content">
               <h4 className="dicas-item-title">
-                <span className="dicas-icon">📖</span>"O que sabe sobre a empresa?"
+                <span className="dicas-icon">📖</span>"O que sabe sobre a
+                empresa?"
               </h4>
               <p className="text dicas-item-text">
-              Pesquise antes! Mencione produtos, cultura ou valores.
+                Pesquise antes! Mencione produtos, cultura ou valores.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div>
-        <div className="dicas-dropdown-btn"  onClick={toggleExtras} id="extras">
+        <div className="dicas-dropdown-btn" onClick={toggleExtras} id="extras">
           <div className="dicas-dropdown-btn-btn">
-            <img src={dropdown} alt="abrir conteudo" className={extras ? "dicas-dropdown-icon-open" : "dicas-dropdown-icon-close"} />
+            <img
+              src={dropdown}
+              alt="abrir conteudo"
+              className={
+                extras
+                  ? "dicas-dropdown-icon-open"
+                  : "dicas-dropdown-icon-close"
+              }
+            />
           </div>
-          <h2
-            className="title-font-sec sec-title-dicas"
-          >
-           🔥 Dicas Extras
-          </h2>
+          <h2 className="title-font-sec sec-title-dicas">🔥 Dicas Extras</h2>
         </div>
         <div
-          className={`dicas-content ${
-            extras ? "dicas-open" : "dicas-close"
-          }`}
+          className={`dicas-content ${extras ? "dicas-open" : "dicas-close"}`}
         >
           <div className="dicas-item">
             <div className="dicas-item-content">
               <h4 className="dicas-item-title">
-                <span className="dicas-icon">✅</span>Leve um portfólio: GitHub, projetos pessoais, blog técnico (se tiver).
+                <span className="dicas-icon">✅</span>Leve um portfólio: GitHub,
+                projetos pessoais, blog técnico (se tiver).
               </h4>
             </div>
             <div className="dicas-item-content">
@@ -305,10 +362,10 @@ return (
                 <span className="dicas-icon">✅</span>Faça perguntas relevantes:
               </h4>
               <p className="text dicas-item-text">
-               ◾ Como é o dia a dia do estagiário?
+                ◾ Como é o dia a dia do estagiário?
               </p>
               <p className="text dicas-item-text">
-               ◾ Quais habilidades são mais importantes para essa vaga?
+                ◾ Quais habilidades são mais importantes para essa vaga?
               </p>
             </div>
             <div className="dicas-item-content">
@@ -316,63 +373,63 @@ return (
                 <span className="dicas-icon">✅</span>Seja sincero:
               </h4>
               <p className="text dicas-item-text">
-              Se não souber algo, diga "Ainda não aprendi, mas estou estudando!"
+                Se não souber algo, diga "Ainda não aprendi, mas estou
+                estudando!"
               </p>
             </div>
           </div>
         </div>
       </div>
       <div>
-        <div className="dicas-dropdown-btn"  onClick={togglePos} id="pos">
+        <div className="dicas-dropdown-btn" onClick={togglePos} id="pos">
           <div className="dicas-dropdown-btn-btn">
-            <img src={dropdown} alt="abrir conteudo" className={pos ? "dicas-dropdown-icon-open" : "dicas-dropdown-icon-close"} />
+            <img
+              src={dropdown}
+              alt="abrir conteudo"
+              className={
+                pos ? "dicas-dropdown-icon-open" : "dicas-dropdown-icon-close"
+              }
+            />
           </div>
-          <h2
-            className="title-font-sec sec-title-dicas"
-          >
+          <h2 className="title-font-sec sec-title-dicas">
             Pós e Pré entrevista
           </h2>
         </div>
-        <div
-          className={`dicas-content ${
-            pos ? "dicas-open" : "dicas-close"
-          }`}
-        >
+        <div className={`dicas-content ${pos ? "dicas-open" : "dicas-close"}`}>
           <div className="dicas-item">
             <div className="dicas-item-content">
               <h4 className="dicas-item-title">
                 <span className="dicas-icon">📌</span>Checklist Pré-Entrevista
               </h4>
               <p className="text dicas-item-text">
-               ◾ Pesquisar sobre a empresa
+                ◾ Pesquisar sobre a empresa
               </p>
               <p className="text dicas-item-text">
-               ◾ Revisar meu portfólio/GitHub
+                ◾ Revisar meu portfólio/GitHub
               </p>
               <p className="text dicas-item-text">
-               ◾ Preparar respostas para perguntas comuns
+                ◾ Preparar respostas para perguntas comuns
               </p>
+              <p className="text dicas-item-text">◾ Escolher roupa adequada</p>
               <p className="text dicas-item-text">
-               ◾ Escolher roupa adequada
-              </p>
-              <p className="text dicas-item-text">
-               ◾ Testar tecnologia (se for online)
+                ◾ Testar tecnologia (se for online)
               </p>
             </div>
           </div>
           <div className="dicas-item-content">
-              <h4 className="dicas-item-title">
-                <span className="dicas-icon">📩</span>Após a Entrevista
-              </h4>
-              <p className="text dicas-item-text">
-               ◾ Envie um e-mail de agradecimento no mesmo dia.
-              </p>
-              <p className="text dicas-item-text">
-               ◾ Caso não seja selecionado, solicite feedback para desenvolvimento.
-              </p>
-            </div>
+            <h4 className="dicas-item-title">
+              <span className="dicas-icon">📩</span>Após a Entrevista
+            </h4>
+            <p className="text dicas-item-text">
+              ◾ Envie um e-mail de agradecimento no mesmo dia.
+            </p>
+            <p className="text dicas-item-text">
+              ◾ Caso não seja selecionado, solicite feedback para
+              desenvolvimento.
+            </p>
           </div>
         </div>
+      </div>
     </div>
   </main>
 );

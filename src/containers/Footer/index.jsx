@@ -4,16 +4,16 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer container">
-        <h4>First-Step</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-          doloremque minus a eos recusandae aliquam porro neque consequatur
-          culpa adipisci eveniet voluptas! Laboriosam soluta, impedit eos velit
-          explicabo eaque earum!
-        </p>
-        <a href="https://storyset.com/people">
-          People illustrations by Storyset
-        </a>
+        <div>
+          <h3>First-Step</h3>
+          <p>Dê o Primeiro Passo na Sua Carreira em Tecnologia</p>
+          <p>© 2025 First-Step. Todos os direitos reservados.</p>
+        </div>
+        <div>
+          <a href="https://storyset.com/people">
+            People illustrations by Storyset
+          </a>
+        </div>
       </div>
     </footer>
   );

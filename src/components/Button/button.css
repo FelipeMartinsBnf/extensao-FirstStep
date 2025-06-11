@@ -23,3 +23,9 @@
   font-size: 14px;
   margin: 0;
 }
+
+.btn:disabled {
+  background-color: #594d6e;
+  color: white;
+  cursor: not-allowed;
+}

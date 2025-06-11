@@ -55,6 +55,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
   width: 100%;
+  justify-content: center;
 }
 
 .btn-select {

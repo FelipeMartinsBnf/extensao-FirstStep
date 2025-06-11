@@ -65,5 +65,9 @@ header {
     padding: 0.2em;
     margin: 0 0.5em;
   }
+
+  .btn-header-lg {
+    display: none;
+  }
   
 }
